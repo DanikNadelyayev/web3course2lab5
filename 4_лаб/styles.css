@@ -1,0 +1,102 @@
+
+body {
+    background-image: linear-gradient(rgba(0, 123, 255, 0.7), rgba(255, 255, 255, 0.7)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-theme .container {
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+}
+
+body.dark-theme .theme-toggle {
+    background: #333;
+    color: white;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+    color: #e0e0e0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    margin: 20px auto;
+    display: block;
+}
+
